@@ -1,0 +1,19 @@
+{
+  "name": "smc-alumni-website",
+  "version": "1.0.0",
+  "description": "Create a redesign of the alumni website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunkhanna00/smc-alumni.git"
+  },
+  "author": "Arun Khanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunkhanna00/smc-alumni/issues"
+  },
+  "homepage": "https://github.com/arunkhanna00/smc-alumni#readme"
+}
