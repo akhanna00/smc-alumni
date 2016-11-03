@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
       <nav class = "navbar navbar-default">
         <div class = "container">
           <!-- SMC Logo Placeholder -->
-          <a class="nav"><img src="http://placehold.it/120x80"></a>
+          <a class="nav" href="#/"><img src="http://placehold.it/120x80"></a>
           
           <div class = "navbar-header">
             <a class = "navbar-brand" href="#/"> Alumni Association</a>
@@ -30,20 +30,27 @@
           <!-- Navigation menu -->
           <div class="collapse navbar-collapse navbar-right" id="menu">
             <ul class = "nav navbar-nav">
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Contact</a></li>
+              <li><a href="#/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#join">Join Us</a></li>
+              <li><a href="#support">Support Us</a></li>
             </ul> 
           </div>
         </div>
       </nav>
     </header>
 
+    <!-- Content to be injected-->
+    <div id="main">
+      <div ng-view></div>
+    </div>
+
     <!-- Scripts -->
-    <script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> 
-    <script defer src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script> 
+    <script defer src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
     <script defer src="index.min.js"></script>
   </body>
 </html>
