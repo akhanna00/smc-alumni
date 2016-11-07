@@ -7,10 +7,37 @@
 	background-image: none;
 }
 
-.container-fluid {
-	max-width: 800px;
+.nav-menu {
+	max-width: 900px;
 }
 
 h3 {
 	font-weight: 400;
+}
+
+.icons {
+	background-color: #e7e7e7;
+	padding-top: 100px;
+	padding-bottom: 150px;
+	margin-top: 200px;
+}
+
+ul {
+	overflow: auto;
+}
+
+ul li {
+	list-style-type: none;
+	float: left;
+}
+
+.fa {
+	background: #205D7A;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
 }
