@@ -10,8 +10,8 @@ myApp.config(["$routeProvider", function($routeProvider) {
 		templateUrl : 'pages/home.min.html'
 	})
 
-	.when('/about', {
-		templateUrl : 'pages/about.min.html'
+	.when('/events', {
+		templateUrl : 'pages/events.min.html'
 	})
 
 	.when('/contact', {
@@ -22,8 +22,16 @@ myApp.config(["$routeProvider", function($routeProvider) {
 		templateUrl : 'pages/join.min.html'
 	})
 
-	.when('/support', {
-		templateUrl : 'pages/support.min.html'
+	.when('/why', {
+		templateUrl : 'pages/why.min.html'
+	})
+
+	.when('/faq', {
+		templateUrl : 'pages/faq.min.html'
+	})
+
+	.when('/donate', {
+		templateUrl : 'pages/donate.min.html'
 	})
 	
 }]);
