@@ -1,6 +1,7 @@
 .carousel-image {
   max-height: 540px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .carousel-control.right, .carousel-control.left {
@@ -32,6 +33,11 @@ h3 {
 
 }
 
+.card {
+	display: inline-block;
+	padding-bottom: 20px;
+	max-width: 250px;
+}
 
 .fa {
 	background: #205D7A;
@@ -100,6 +106,7 @@ h3 {
     background: #fff;
 }
 
+
 @media screen and (max-width: 766px) {
 	.icons {
 		margin: 0 auto;
@@ -124,4 +131,6 @@ h3 {
 		margin-right: 0px;
 	}
 }
+
+
 

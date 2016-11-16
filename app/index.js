@@ -7,7 +7,8 @@ myApp.config(["$routeProvider", function($routeProvider) {
 	$routeProvider
 
 	.when('/', {
-		templateUrl : 'pages/home.min.html'
+		templateUrl : 'pages/home.min.html',
+		controller : 'homeController'
 	})
 
 	.when('/events', {
@@ -35,3 +36,30 @@ myApp.config(["$routeProvider", function($routeProvider) {
 	})
 	
 }]);
+
+// Make a controller for the home page
+myApp.controller('homeController', ['$scope', function($scope) {
+	// Store the JSON of the data to be displayed as events
+	$scope.events = events;
+}]);
+
+// Data to be stored
+var events = [
+	{
+		name: 'Homecoming',
+		time: "November 5th",
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod elit sit amet condimentum mollis. Mauris commodo malesuada urna, pellentesque eleifend"
+	},
+	{
+		name: 'International Day', 
+		time: 'November 6th',
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod elit sit amet condimentum mollis. Mauris commodo malesuada urna, pellentesque eleifend"
+
+	}, 
+	{
+		name: "Veteran's Day",
+		time: 'November 8th',
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod elit sit amet condimentum mollis. Mauris commodo malesuada urna, pellentesque eleifend"
+
+	}
+];
