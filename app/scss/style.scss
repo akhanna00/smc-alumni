@@ -1,7 +1,12 @@
+.navbar {
+	margin-bottom: 0;
+}
+
 .carousel-image {
   max-height: 540px;
   width: 100%;
   margin-bottom: 20px;
+
 }
 
 .carousel-control.right, .carousel-control.left {
@@ -20,7 +25,7 @@ h3 {
 	background-color: #e7e7e7;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-top: 200px;
+	margin-top: 100px;
 }
 
 .icons {
@@ -37,6 +42,7 @@ h3 {
 	display: inline-block;
 	padding-bottom: 20px;
 	max-width: 250px;
+	margin-bottom: 20px;
 }
 
 .fa {
@@ -115,6 +121,10 @@ h3 {
 	.address {
 		text-align: center;
 	}
+
+	.event-desc {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 470px) {
@@ -130,6 +140,11 @@ h3 {
 	.fa-medium {
 		margin-right: 0px;
 	}
+}
+
+.more {
+	float: right;
+	margin-right: 40px;
 }
 
 
