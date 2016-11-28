@@ -3,10 +3,14 @@
 	<h2> Events </h2><hr>
 	<div class="event col-sm-4 text-center" ng-repeat="event in events | orderBy: '-time':true">
 		<div class="card panel panel-default">
-			<img class="img-responsive center-block" src="https://placehold.it/250x200">
+			<a ng-href="/#/events/{{event.id}}"><img class="img-responsive center-block" ng-src="{{event.image}}"></a>
 			<h4> {{ event.name }}</h4>
-			<p> {{ event.date | date}} -{{ event.time}} </p>
-			<p class="event-desc"> {{ event.description }} </p>
+			<p class="date-time"> {{ event.date | date}} <span class="time"> {{ event.time }} </span></p>
+			<p class="event-desc"> {{ event.summary }} </p>
 		</div>
 	</div>
 </div>
+
+
+
+
